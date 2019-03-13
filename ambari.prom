@@ -1,0 +1,6 @@
+# HELP ambari status check ambari status.
+# TYPE hardware_status counter
+ambari_status_CRITICAL{status="CRITICAL"} 0
+ambari_status_OK{status="OK"} 5
+ambari_status_UNKNOWN{status="UNKNOWN"} 1
+ambari_status_WARNING{status="WARNING"} 0

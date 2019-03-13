@@ -29,7 +29,7 @@ class Ambari(object):
     def get_alerts_summary(self):
         response_json = self.get_response()
         info_dict = response_json.get("alerts_summary_hosts")
-        print(info_dict)
+        # print(info_dict)
         return info_dict
 
 
