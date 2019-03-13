@@ -21,7 +21,7 @@ def main():
     WARNING = response_json.get("WARNING",'0')
 
     content = ['# HELP ambari status check ambari status.\n','# TYPE hardware_status counter\n','ambari_status_CRITICAL{{status="CRITICAL"}} {0}\n'.format(CRITICAL), \
-               'ambari_status_OK{{status="OK"}} {0}\n'.format(OK),'ambari_status_UNKNOWN{{status="UNKNOWN"}} {0}\n'.format(UNKNOWN),'ambari_status_WARNING{{status="WARNING"}} {0}'.format(WARNING) ]
+               'ambari_status_OK{{status="OK"}} {0}\n'.format(OK),'ambari_status_UNKNOWN{{status="UNKNOWN"}} {0}\n'.format(UNKNOWN),'ambari_status_WARNING{{status="WARNING"}} {0}\n'.format(WARNING) ]
 
     f = open(promfile,'w+')
     f.writelines(content)
